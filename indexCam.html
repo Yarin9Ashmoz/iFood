@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan QR</title>
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy@1.1.1/dist/webcam-easy.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
+      rel="stylesheet"
+    />
+    </style>
+</head>
+<body>
+    <video id="webCam" autoplay playsinline width="600" height="600"></video>
+    <canvas id="canvas"></canvas>
+    <a download></a>    
+
+<script>
+    const webCamElement = document.getElementById("webCam");
+    const canvasElement = document.getElementById("canvas");
+    const webcam = new Webcam(webCamElement,"user",canvasElement);
+    webcam.start();
+</script>
+
+<a id="next" href="./index.html">
+    <button type="button" class="btn btn-success"><span>Menu</span></button>
+</a>
+
+</body>
+</html>
