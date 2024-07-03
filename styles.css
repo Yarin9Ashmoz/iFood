@@ -176,3 +176,8 @@ footer {
   to {opacity: 0}
 }
 
+@media (max-width: 600px) {
+  body {
+      background-position: center bottom;
+  }
+}
