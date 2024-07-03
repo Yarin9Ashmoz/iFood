@@ -178,6 +178,12 @@ footer {
 }
 
 @media (max-width: 800px) {
+  .container {
+    height: 800px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+  }
   body {
       background-position: center bottom;
       background-repeat: no-repeat;
