@@ -177,7 +177,7 @@ footer {
   to {opacity: 0}
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .container {
     height: 800px;
     width: 400px;
