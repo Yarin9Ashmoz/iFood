@@ -178,17 +178,82 @@ footer {
   to {opacity: 0}
 }
 
-@media (max-width: 700px) {
+/* עיצוב בסיסי לכל המסכים */
+body {
+  font-family: 'Space Mono', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+/* מידיות מדיה למסכים גדולים יותר */
+@media (min-width: 768px) {
   .container {
-    height: 800px;
-    width: 400px;
+    max-width: 70%;
     margin: auto;
-    text-align: center;
   }
-  body {
-      background-position: center bottom;
-      background-repeat: no-repeat;
-      background-size: cover;
+
+  button {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
   }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: auto;
+  }
+}
+
+/* מידיות מדיה למסכים בינוניים */
+@media (max-width: 768px) {
+  h1, p {
+    font-size: 2rem;
+  }
+
+  img {
+    max-width: 80%;
+    max-height: auto;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+
+/* מידיות מדיה למסכים קטנים */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
   
 }
